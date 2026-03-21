@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Easy Park",
+    "slug": "easypark",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07090f"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.easypark.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Easy Park utilise votre position pour afficher les places de parking proches.",
+        "NSLocationAlwaysUsageDescription": "Easy Park utilise votre position pour vous alerter des places disponibles.",
+        "NSCameraUsageDescription": "Easy Park utilise la cam\u00e9ra pour photographier les places de parking.",
+        "NSPhotoLibraryUsageDescription": "Easy Park acc\u00e8de \u00e0 vos photos pour illustrer les signalements."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#07090f"
+      },
+      "package": "com.easypark.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Easy Park utilise votre position pour les places proches."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Easy Park acc\u00e8de \u00e0 vos photos.",
+          "cameraPermission": "Easy Park utilise la cam\u00e9ra."
+        }
+      ]
+    ],
+    "scheme": "easypark",
+    "extra": {
+      "supabaseUrl": "https://wgrnvyezitzpmpguuvsb.supabase.co",
+      "supabaseAnonKey": "sb_publishable_NZdHyD_LIAAjTsTxChdtcA_OMhlnmlO"
+    }
+  }
+}
